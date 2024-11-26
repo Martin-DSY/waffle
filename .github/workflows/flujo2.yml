@@ -23,6 +23,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v2
       with:
+        context: ./test  # Establece el contexto al directorio donde se encuentra el Dockerfile
+        file: ./test/Dockerfile  # Especifica la ruta exacta del Dockerfile dentro del contexto
         push: true
-        tags: martindsy/waffleapp:latest
-
+        tags: martindsy/waffleapp:latest  # Asegúrate de que el nombre de usuario y el nombre del repositorio son correctos
