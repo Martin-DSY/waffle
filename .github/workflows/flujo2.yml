@@ -24,4 +24,5 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/waffleapp:latest
+        tags: martindsy/waffleapp:latest
+
